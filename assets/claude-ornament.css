@@ -1,0 +1,9 @@
+
+/* A quiet reference-matched ornament at the foot of the profile column. */
+.profile-sidebar { display: flex; flex-direction: column; min-height: min(740px, calc(100svh - 158px)); }
+.profile-ornament { margin-top: auto; padding-top: 44px; width: 100%; pointer-events: none; user-select: none; }
+.profile-ornament .claude-art { display: block; width: 100%; height: auto; overflow: visible; }
+@media (max-width: 760px) {
+  .profile-sidebar { min-height: 0; }
+  .profile-ornament { padding-top: 27px; width: 244px; max-width: 100%; }
+}

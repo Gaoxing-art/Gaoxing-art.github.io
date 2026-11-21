@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="claude-art" viewBox="0 -20 990 282" role="img" aria-labelledby="claude-art-title">
+<title id="claude-art-title">Four orange pixel characters: a game controller, a glowing light bulb, a heart, and a typing bubble</title>
+<style>
+.claude-art { --cycle: 4.8s; --ink: #1b0c08; --orange: #ffa35c; }
+.claude-art .outlined { stroke: var(--ink); stroke-width: 3.6; stroke-linejoin: round; stroke-linecap: round; }
+.claude-art .body { fill: var(--orange); }
+.claude-art .eye { fill: #160906; }
+.claude-art .lamp-glass { fill: #f4e9d1; }
+.claude-art .lamp-light { fill: #ffe18a; opacity: .02; animation: claude-light var(--cycle) linear infinite; }
+.claude-art .lamp-halo { opacity: 0; animation: claude-halo var(--cycle) linear infinite; }
+.claude-art .filament { fill: none; stroke: #9c7447; stroke-width: 3.2; animation: claude-filament var(--cycle) linear infinite; }
+.claude-art .dot-2 { opacity: 0; animation: claude-dot-two var(--cycle) step-end infinite; }
+.claude-art .dot-3 { opacity: 0; animation: claude-dot-three var(--cycle) step-end infinite; }
+@keyframes claude-light {
+  0%, 8% { opacity: .02; }
+  33.333% { opacity: .38; }
+  66.667%, 99.999% { opacity: 1; }
+  100% { opacity: .02; }
+}
+@keyframes claude-halo {
+  0%, 8% { opacity: 0; }
+  33.333% { opacity: .25; }
+  66.667%, 99.999% { opacity: .8; }
+  100% { opacity: 0; }
+}
+@keyframes claude-filament {
+  0%, 8% { stroke: #9c7447; }
+  33.333% { stroke: #e2a43d; }
+  66.667%, 99.999% { stroke: #fff8d8; }
+  100% { stroke: #9c7447; }
+}
+@keyframes claude-dot-two {
+  0% { opacity: 0; }
+  33.333% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes claude-dot-three {
+  0% { opacity: 0; }
+  66.667% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .claude-art .lamp-light, .claude-art .lamp-halo, .claude-art .filament,
+  .claude-art .dot-2, .claude-art .dot-3 { animation: none; }
+  .claude-art .lamp-light { opacity: .65; }
+  .claude-art .lamp-halo { opacity: .25; }
+  .claude-art .dot-2, .claude-art .dot-3 { opacity: 1; }
+}
+</style>
+<defs>
+  <radialGradient id="claude-lamp-glow"><stop offset="0" stop-color="#ffd462" stop-opacity=".68"/><stop offset=".48" stop-color="#ffdc79" stop-opacity=".28"/><stop offset="1" stop-color="#ffe6a4" stop-opacity="0"/></radialGradient>
+</defs>
+<g class="claude-character claude-player" transform="translate(4 0)">
+  <path class="body outlined" d="M32 132H81V124H149V153H161V151H170V182H148V213H142V248H129V222H114V249H100V222H85V249H70V222H54V249H40V222H32V200H1V170H32Z"/>
+  <path class="eye" d="M62 145H77V161H62ZM126 140H141V155H126Z"/>
+  <path class="outlined" fill="#be2d2a" d="M158 133H178V154H158Z"/>
+  <path class="eye" d="M164 138H173V148H164Z"/><path fill="#ec6650" d="M167 141H170V145H167Z"/>
+  <g class="floating-controller" transform="translate(185 83)">
+    <path class="outlined" fill="#bf9c8f" d="M14 0H45V7H51V13H59V33H51V41H45V48H14V41H7V34H0V13H7V7H14Z"/>
+    <path class="outlined" fill="#fbf0d8" d="M9 8H50V39H9Z"/>
+    <path fill="none" stroke="#1b0c08" stroke-width="3" d="M1 16H7M51 16H57M9 11V34M50 12V34"/>
+    <path class="outlined" fill="#a68c80" d="M30 12H35V18H30Z"/>
+  </g>
+</g>
+<g class="claude-character claude-thinker" transform="translate(276 0)">
+  <path class="body outlined" d="M32 123H91V114H113V84H124V91H141V114H150V240H136V210H122V240H106V210H76V240H61V211H46V240H32V186H2V158H32Z"/>
+  <path class="eye" d="M45 137H61V153H45ZM119 129H134V145H119Z"/>
+  <g class="claude-lamp">
+    <ellipse class="lamp-halo" cx="80" cy="41" rx="66" ry="62" fill="url(#claude-lamp-glow)"/>
+    <path class="lamp-glass outlined" d="M61 10H98V17H105V25H113V55H105V62H100V72H96V80H65V72H61V62H53V55H46V26H54V18H61Z"/>
+    <path class="lamp-light" d="M62 12H97V19H103V27H111V54H103V60H98V70H94V77H67V70H63V60H55V53H48V28H56V20H62Z"/>
+    <path fill="none" class="outlined" d="M56 23H104M54 26V54M104 27V54M63 62H98M65 69H96"/>
+    <path class="outlined" fill="#ccafa0" d="M64 74H98V82H64ZM66 83H95V90H66ZM70 91H90V98H70Z"/>
+    <path class="filament" d="M71 68V42H65V29H72V41H80V27H87V41H95V30H101V42H93V67M71 50H92"/>
+    <path fill="none" stroke="#1b0c08" stroke-width="2.6" stroke-linejoin="round" d="M63 35H68M76 35H81M89 35H94M69 44V65M94 44V65"/>
+  </g>
+</g>
+<g class="claude-character claude-heart" transform="translate(512 0)">
+  <path class="body outlined" d="M66 117H192V146H224V174H192V239H177V210H163V239H147V207H113V239H98V208H82V239H67V159H38V129H66Z"/>
+  <path class="eye" d="M82 132H97V148H82ZM160 132H175V148H160Z"/>
+  <path class="outlined" fill="#fa6647" d="M6 85H16V78H29V83H36V91H44V83H52V78H65V84H74V101H67V108H58V115H51V122H43V130H36V123H29V116H22V109H15V102H7V96H3V86Z"/>
+  <path fill="#ff8b60" d="M9 88H18V81H28V86H34V92H28V88H20V94H10Z"/>
+</g>
+<g class="claude-character claude-speaker" transform="translate(810 0)">
+  <path class="body outlined" d="M33 118H61V110H119V102H150V126H161V134H172V163H162V173H150V239H135V207H119V239H103V203H90V211H76V238H61V210H46V239H32V187H1V156H33Z"/>
+  <path class="eye" d="M47 135H68V142H47ZM115 127H136V134H115Z"/>
+  <path class="outlined" fill="#fff2d7" stroke-width="2.8" d="M151 136H158V151H151Z"/>
+  <path fill="#00a4cf" d="M98 22H147V28H155V65H147V73H132V81H123V88H113V73H100V66H92V29H98Z"/>
+  <path fill="#0795c1" d="M98 22H147V28H98Z"/>
+  <g fill="#081013">
+    <rect class="dot dot-1" x="104" y="43" width="10" height="10" rx="1.5"/>
+    <rect class="dot dot-2" x="118" y="43" width="10" height="10" rx="1.5"/>
+    <rect class="dot dot-3" x="132" y="43" width="10" height="10" rx="1.5"/>
+  </g>
+</g>
+</svg>
